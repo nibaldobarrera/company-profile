@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_COMPANYPROFILE_COMPANYPROFILE_VIEW_DEFAULT_TITLE">
+		<message>COM_COMPANYPROFILE_COMPANYPROFILE_VIEW_DEFAULT_DESC</message>
+	</layout>
+	<fields
+			name="request"
+			addfieldpath="/administrator/components/com_companyprofile/models/fields"
+			>
+		<fieldset name="request">
+			<field
+					name="id"
+					type="companyprofile"
+					label="COM_COMPANYPROFILE_COMPANYPROFILE_FIELD_GREETING_LABEL"
+					description="COM_COMPANYPROFILE_COMPANYPROFILE_FIELD_GREETING_DESC"
+					/>
+		</fieldset>
+	</fields>
+</metadata>
