@@ -65,7 +65,14 @@ class CompanyProfileModelCompanyProfile extends JModelItem
 			$table->load($id);
 
 			// Assign the message
-			$this->messages[$id] = $table->company;
+			$company_label = JText::_('COM_COMPANYPROFILE_COMPANYPROFILE_COMPANY_LABEL');
+			$adress_label  = JText::_('COM_COMPANYPROFILE_COMPANYPROFILE_ADRESS_LABEL');
+			$city_label    = JText::_('COM_COMPANYPROFILE_COMPANYPROFILE_CITY_LABEL');
+			$phone_label   = JText::_('COM_COMPANYPROFILE_COMPANYPROFILE_PHONE_LABEL');
+			$this->messages[$id] = $company_label." : ".$table->company."<br>".
+			                       $adress_label." : ".$table->adress."<br>".
+			                       $city_label." : ".$table->city."<br>".
+			                       $phone_label." : ".$table->phone ;
 		}
 
 		return $this->messages[$id];

@@ -1,11 +1,11 @@
 DROP TABLE IF EXISTS `#__companyprofile`;
 
 CREATE TABLE `#__companyprofile` (
-	`id`       INT(11)     NOT NULL AUTO_INCREMENT,
-	`company`  VARCHAR(25) NOT NULL,
-	`adress`   VARCHAR(25) NOT NULL,
-	`city`     VARCHAR(25) NOT NULL,
-	`phone`    VARCHAR(16) NOT NULL,
+	`id`        INT(11)     NOT NULL AUTO_INCREMENT,
+	`company`   VARCHAR(25) NOT NULL,
+	`adress`    VARCHAR(25) NOT NULL,
+	`city`      VARCHAR(25) NOT NULL,
+	`phone`     VARCHAR(16) NOT NULL,
 	`published` tinyint(4) NOT NULL,
 	PRIMARY KEY (`id`)
 )
@@ -16,4 +16,4 @@ CREATE TABLE `#__companyprofile` (
 INSERT INTO `#__companyprofile` 
 (`company`,`adress`,`city`,`phone`) VALUES
 ("Doña Elisa","Presbítero Moraga 906","Curacaví","(2)2835 2626"),
-("Parcela La Barrica","Parcela h1 - El Naranjo","Curacaví", "98220345");
+("Parcela La Barrica","Parcela H1 - El Naranjo","Curacaví", "(9)9822 0345");

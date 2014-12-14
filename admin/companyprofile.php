@@ -10,6 +10,13 @@
 // No direct access to this file
 defined('_JEXEC') or die;
 
+// Set some global property
+$document = JFactory::getDocument();
+$document->addStyleDeclaration('.icon-companyprofile {background-image: url(../media/com_companyprofile/images/tux-16x16.png);}');
+
+// import joomla controller library
+jimport('joomla.application.component.controller');
+
 // Get an instance of the controller prefixed by CompanyProfile
 $controller = JControllerLegacy::getInstance('CompanyProfile');
 

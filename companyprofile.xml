@@ -3,14 +3,14 @@
 
 	<name>COM_COMPANYPROFILE</name>
 	<!-- The following elements are optional and free of formatting constraints -->
-	<creationDate>Decembee 2014</creationDate>
+	<creationDate>December 2014</creationDate>
 	<author>Nibaldo Barrera</author>
 	<authorEmail>nibaldobarrera@kazeta.cl</authorEmail>
 	<authorUrl>http://www.kazetacl</authorUrl>
 	<copyright>Copyright Info</copyright>
 	<license>License Info</license>
 	<!--  The version string is recorded in the components table -->
-	<version>0.0.2</version>
+	<version>0.0.3</version>
 	<!-- The description is optional and defaults to the name -->
 	<description>COM_COMPANYPROFILE_DESCRIPTION</description>
 
@@ -44,6 +44,7 @@
 
 	<languages folder="site/language">
         <language tag="en-GB">en-GB/en-GB.com_companyprofile.ini</language>
+        <language tag="es-ES">es-ES/es-ES.com_companyprofile.ini</language>
     </languages>
 
 	<media destination="com_companyprofile" folder="media">
@@ -77,6 +78,8 @@
 		<languages folder="admin/language">
             <language tag="en-GB">en-GB/en-GB.com_companyprofile.ini</language>
             <language tag="en-GB">en-GB/en-GB.com_companyprofile.sys.ini</language>
+            <language tag="es-ES">es-ES/es-ES.com_companyprofile.ini</language>
+            <language tag="es-ES">es-ES/es-ES.com_companyprofile.sys.ini</language>
         </languages>
 	</administration>
 

@@ -37,13 +37,13 @@ $listDirn      = $this->escape($this->state->get('list.direction'));
 			<th width="15%">
 				<?php echo JHtml::_('grid.sort', 'COM_COMPANYPROFILE_COMPANYPROFILES_NAME', 'company', $listDirn, $listOrder);?>
 			</th>
-			<th width="15%">
+			<th width="45%">
 				<?php echo JHtml::_('grid.sort', 'COM_COMPANYPROFILE_COMPANYPROFILES_ADRESS', 'adress', $listDirn, $listOrder);?>
 			</th>
 			<th width="15%">
 				<?php echo JHtml::_('grid.sort', 'COM_COMPANYPROFILE_COMPANYPROFILES_CITY', 'city', $listDirn, $listOrder);?>
 			</th>
-			<th width="45%">
+			<th width="15%">
 				<?php echo JHtml::_('grid.sort', 'COM_COMPANYPROFILE_COMPANYPROFILES_PHONE', 'phone', $listDirn, $listOrder);?>
 			</th>
 			<th width="5%">

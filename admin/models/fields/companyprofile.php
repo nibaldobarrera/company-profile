@@ -45,7 +45,7 @@ class JFormFieldCompanyProfile extends JFormFieldList
 		{
 			foreach ($messages as $message)
 			{
-				$options[] = JHtml::_('select.option', $message->id, $message->company, $message->adress, $message->city, $message->phone);
+				$options[] = JHtml::_('select.option', $message->id, $message->company);
 			}
 		}
 
