@@ -6,11 +6,38 @@
 				type="hidden"
 				/>
 		<field
-				name="greeting"
+				name="company"
 				type="text"
-				label="COM_COMPANYPROFILE_COMPANYPROFILE_GREETING_LABEL"
-				description="COM_COMPANYPROFILE_COMPANYPROFILE_GREETING_DESC"
+				label="COM_COMPANYPROFILE_COMPANYPROFILE_COMPANY_LABEL"
+				description="COM_COMPANYPROFILE_COMPANYPROFILE_COMPANY_DESC"
 				size="40"
+				class="inputbox"
+				default=""
+				/>
+		<field
+				name="adress"
+				type="text"
+				label="COM_COMPANYPROFILE_COMPANYPROFILE_ADRESS_LABEL"
+				description="COM_COMPANYPROFILE_COMPANYPROFILE_ADRESS_DESC"
+				size="40"
+				class="inputbox"
+				default=""
+				/>
+		<field
+				name="city"
+				type="text"
+				label="COM_COMPANYPROFILE_COMPANYPROFILE_CITY_LABEL"
+				description="COM_COMPANYPROFILE_COMPANYPROFILE_CITY_DESC"
+				size="20"
+				class="inputbox"
+				default=""
+				/>
+		<field
+				name="phone"
+				type="text"
+				label="COM_COMPANYPROFILE_COMPANYPROFILE_PHONE_LABEL"
+				description="COM_COMPANYPROFILE_COMPANYPROFILE_PHONE_DESC"
+				size="16"
 				class="inputbox"
 				default=""
 				/>

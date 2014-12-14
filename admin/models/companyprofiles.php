@@ -30,7 +30,10 @@ class CompanyProfileModelCompanyProfiles extends JModelList
 		{
 			$config['filter_fields'] = array(
 				'id',
-				'greeting',
+				'company',
+				'adress',
+				'city',
+				'phone',
 				'published'
 			);
 		}
@@ -59,7 +62,7 @@ class CompanyProfileModelCompanyProfiles extends JModelList
 		if (!empty($search))
 		{
 			$like = $db->quote('%' . $search . '%');
-			$query->where('greeting LIKE ' . $like);
+			$query->where('company LIKE ' . $like);
 		}
 
 		// Filter by published state
@@ -75,7 +78,7 @@ class CompanyProfileModelCompanyProfiles extends JModelList
 		}
 
 		// Add the list ordering clause.
-		$orderCol	= $this->state->get('list.ordering', 'greeting');
+		$orderCol	= $this->state->get('list.ordering', 'company');
 		$orderDirn 	= $this->state->get('list.direction', 'asc');
 
 		$query->order($db->escape($orderCol) . ' ' . $db->escape($orderDirn));

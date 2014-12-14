@@ -34,8 +34,17 @@ $listDirn      = $this->escape($this->state->get('list.direction'));
 			<th width="2%">
 				<input type="checkbox" name="toggle" value="" onclick="checkAll(<?php echo count($this->items); ?>)" />
 			</th>
-			<th width="90%">
-				<?php echo JHtml::_('grid.sort', 'COM_COMPANYPROFILE_COMPANYPROFILES_NAME', 'greeting', $listDirn, $listOrder);?>
+			<th width="15%">
+				<?php echo JHtml::_('grid.sort', 'COM_COMPANYPROFILE_COMPANYPROFILES_NAME', 'company', $listDirn, $listOrder);?>
+			</th>
+			<th width="15%">
+				<?php echo JHtml::_('grid.sort', 'COM_COMPANYPROFILE_COMPANYPROFILES_ADRESS', 'adress', $listDirn, $listOrder);?>
+			</th>
+			<th width="15%">
+				<?php echo JHtml::_('grid.sort', 'COM_COMPANYPROFILE_COMPANYPROFILES_CITY', 'city', $listDirn, $listOrder);?>
+			</th>
+			<th width="45%">
+				<?php echo JHtml::_('grid.sort', 'COM_COMPANYPROFILE_COMPANYPROFILES_PHONE', 'phone', $listDirn, $listOrder);?>
 			</th>
 			<th width="5%">
 				<?php echo JHtml::_('grid.sort', 'COM_COMPANYPROFILE_PUBLISHED', 'published', $listDirn, $listOrder); ?>
@@ -64,7 +73,22 @@ $listDirn      = $this->escape($this->state->get('list.direction'));
 						</td>
 						<td>
 							<a href="<?php echo $link; ?>" title="<?php echo JText::_('COM_COMPANYPROFILE_EDIT_COMPANYPROFILE'); ?>">
-								<?php echo $row->greeting; ?>
+								<?php echo $row->company; ?>
+							</a>
+						</td>
+						<td>
+							<a href="<?php echo $link; ?>" title="<?php echo JText::_('COM_COMPANYPROFILE_EDIT_COMPANYPROFILE'); ?>">
+								<?php echo $row->adress; ?>
+							</a>
+						</td>
+						<td>
+							<a href="<?php echo $link; ?>" title="<?php echo JText::_('COM_COMPANYPROFILE_EDIT_COMPANYPROFILE'); ?>">
+								<?php echo $row->city; ?>
+							</a>
+						</td>
+						<td>
+							<a href="<?php echo $link; ?>" title="<?php echo JText::_('COM_COMPANYPROFILE_EDIT_COMPANYPROFILE'); ?>">
+								<?php echo $row->phone; ?>
 							</a>
 						</td>
 						<td align="center">
@@ -84,4 +108,3 @@ $listDirn      = $this->escape($this->state->get('list.direction'));
 	<input type="hidden" name="filter_order_Dir" value="<?php echo $listDirn; ?>"/>
 	<?php echo JHtml::_('form.token'); ?>
 </form>
-

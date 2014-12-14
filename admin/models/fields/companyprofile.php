@@ -35,7 +35,7 @@ class JFormFieldCompanyProfile extends JFormFieldList
 	{
 		$db    = JFactory::getDBO();
 		$query = $db->getQuery(true);
-		$query->select('id,greeting');
+		$query->select('id,company,adress,city,phone');
 		$query->from('#__companyprofile');
 		$db->setQuery((string) $query);
 		$messages = $db->loadObjectList();
@@ -45,7 +45,7 @@ class JFormFieldCompanyProfile extends JFormFieldList
 		{
 			foreach ($messages as $message)
 			{
-				$options[] = JHtml::_('select.option', $message->id, $message->greeting);
+				$options[] = JHtml::_('select.option', $message->id, $message->company, $message->adress, $message->city, $message->phone);
 			}
 		}
 
